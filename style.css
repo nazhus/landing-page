@@ -7,6 +7,7 @@ html {
     font-family: 'Inter', sans-serif;
 }
 
+
 .hero {
     position: relative;
     background: url('image 1.svg') no-repeat center center/cover;
@@ -307,19 +308,29 @@ html {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    .testimonials {
+        padding: 40px 20px;
+    }
     .testimonials .subtitle {
         font-size: 1.8rem;
+        margin-bottom: 60px !important;
     }
 }
 
 @media (max-width: 480px) {
+    .testimonials {
+        padding: 20px 10px;
+    }
     .testimonials .subtitle {
         font-size: 1.5rem;
+        margin-bottom: 40px !important;
     }
-    .testimonials-slider{
-        width: 1000px;
+    .testimonials-slider {
+        max-width: 100%;
+        padding: 20px 10px;
     }
 }
+
 
 /* Footer Styles */
 .footer {
@@ -344,8 +355,7 @@ html {
 }
 
 .footer ul li {
-    display: inline-block;
-    margin: 0 10px;
+    margin: 10px 0;
 }
 
 .footer ul li a {
@@ -358,7 +368,12 @@ html {
     color: #A2FF00;
 }
 
+.footer .social-links {
+    padding: 0;
+}
+
 .footer .social-links li {
+    display: inline-block;
     margin: 0 10px;
 }
 
@@ -381,6 +396,46 @@ html {
     font-size: 0.8rem;
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px 0;
+    }
+    .footer .text-center {
+        margin-top: 10px;
+    }
+    .footer ul li {
+        margin: 5px 0;
+    }
+    .footer .social-links li {
+        margin: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px 10px;
+    }
+    .footer .text-center {
+        margin-top: 10px;
+    }
+    .footer ul li {
+        margin: 5px 0;
+    }
+    .footer .social-links li {
+        margin: 5px;
+    }
+    .footer .col-sm-12 {
+        text-align: center;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 769px) {
+    .footer .row {
+        justify-content: space-around;
+    }
+}
 
 
 
@@ -469,3 +524,4 @@ html {
         font-size: 1.2rem;
     }
 }
+
